@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Button from "./Componets/Button"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+let obj = {color: "tomato", textAlign:"center"}
+// JSX 
+const App = ()=>{
+    let a = 10
+    let b = 5
+    return (
+        <div>
+           <h1 className="heading">Hello World</h1>
+           <h1 style={obj}>value of a = {a}</h1>
+            <p> {a+b} </p>
+            <p>Hello how are you</p>
+
+            <Button />
+            <Button />
+            <Button />
+            
+        </div>
+    )
 }
 
-export default App;
+export default App
+
+// Modules in javascript
